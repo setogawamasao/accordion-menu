@@ -51,43 +51,20 @@ input {
 }
 
 .acd-label:after {
-  font-family: "Font Awesome 5 Free";
-  background: #00479d;
-  width: 46px;
-  height: 0.1rem;
-  border-radius: 0.1em;
   content: "";
   position: absolute;
-  right: 0;
-  top: 0;
-  box-sizing: border-box;
-  padding: 10px 20px;
+  top: 6px;
+  right: 16px;
+
+  border-bottom: solid 4px #fff;
+  border-right: solid 4px #fff;
+  width: 18px;
+  height: 18px;
+  transform: rotate(45deg);
+  transition: all 0.3s;
 }
 
 .acd-check:checked + .acd-label:after {
-  content: "-";
-}
-
-.dli-plus {
-  display: inline-block;
-  vertical-align: middle;
-  color: #333;
-  line-height: 1;
-  width: 1em;
-  height: 0.1em;
-  background: currentColor;
-  border-radius: 0.1em;
-  position: relative;
-}
-
-.dli-plus::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  border-radius: inherit;
-  transform: rotate(90deg);
+  top: 16px;
+  transform: rotate(225deg);
 }
